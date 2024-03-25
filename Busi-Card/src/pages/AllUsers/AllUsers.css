@@ -1,0 +1,41 @@
+.AllUsers {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.AllUsers table {
+    border: 2px solid lightgrey;
+    width: 80vw;
+}
+
+.AllUsers th {
+    border-bottom: 1px solid black;
+}
+
+.AllUsers td {
+    text-align: center;
+}
+
+.AllUsers tr:nth-child(even) {
+    background-color: lightslategray;
+}
+
+.AllUsers tr:nth-child(odd) {
+    background-color: #f0f;
+}
+
+.AllUsers tr:hover {
+    background-color: #28a32e;
+}
+
+.AllUsers .icon, .AllUsers .profilImage {
+    width: 50px;
+    border-radius: 50%;
+} 
+
+.tableHeader {
+    font-size: 1rem;
+}
+

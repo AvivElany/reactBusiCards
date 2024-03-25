@@ -1,0 +1,27 @@
+.title,
+.divLoading {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card img:hover {
+    border: 2px solid #000;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.Card-Text {
+    height: 80px;
+    overflow: hidden;
+}

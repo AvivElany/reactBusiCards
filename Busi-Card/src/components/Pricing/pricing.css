@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    vertical-align: baseline;
+}
+
+:root {
+    --color01: #135EF2;
+    /*dark blue*/
+    --color02: #3071F2;
+    /*light blue*/
+    --color03: #5E90F2;
+    /*blue*/
+    --color04: #8DC3F2;
+    /*lighter blue*/
+    --color05: #F2F2F2;
+    /*grey*/
+    --color06: #ffffff;
+    /*white*/
+    --color07: #171717;
+    /*dark grey*/
+    --color08: #363636;
+    /*medium grey*/
+    --color09: #3ab020;
+    /*green ok */
+    --color10: #b51a05;
+    /*red*/
+    --color11: #0000004d;
+    /*shadow*/
+}
+
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: var(--color05);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-price {
+    font-size: 24px;
+    color: var(--color07);
+    font-weight: 500;
+}
+
+.card-price-month {
+    font-size: 16px;
+    color: var(--color08);
+}
+
+.card-price-block {
+    width: 80%;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color05);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 35px;
+}
+
+.color01 {
+    background-color: var(--color03);
+}
+
+.color02 {
+    background-color: var(--color01);
+}
+
+.color03 {
+    background-color: var(--color03);
+}
+
+.card-header {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color06);
+    padding: 15px;
+}
+
+.card {
+    background-color: var(--color06);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px -5px var(--color11);
+}
+
+.card-pricing-list {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card-pricing-item {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+    text-align: center;
+    padding: 6px 20px;
+    border-bottom: 1px solid var(--color05);
+}
+
+.card-pricing-item:last-child {
+    border-bottom: none;
+}
+
+.card-button-01 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color06);
+    background-color: var(--color03);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.card-button-01:hover {
+    color: var(--color07);
+    background-color: var(--color05);
+}
+
+.card-button-02 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color06);
+    background-color: var(--color01);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.card-button-02:hover {
+    color: var(--color07);
+    background-color: var(--color05);
+}
+
+.icon-check {
+    color: var(--color09);
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+li.included-in-price::before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 12px;
+    color: var(--color09);
+    content: "\f00c";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+li.not-included-in-price::before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 12px;
+    color: var(--color10);
+    content: "\f00d";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .card {
+        margin: 0 10px;
+        min-width: 30%;
+    }
+}

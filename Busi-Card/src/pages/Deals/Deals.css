@@ -1,0 +1,70 @@
+.pricing {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.priceCard {
+    border: 3px solid #000;
+    align-items: center;
+    padding: 25px;
+}
+
+.recommendedBorder {
+    border: 5px solid #000;
+    align-items: center;
+    padding: 25px;
+    animation: recommended 3s infinite;
+    transition: 0.3s ease-in-out;
+
+}
+
+.thePrice {
+    font-size: 32px;
+}
+
+.sahdowLight {
+    box-shadow: 8px 10px 17px 11px rgba(49, 55, 24, 0.75);
+        -webkit-box-shadow: 8px 10px 17px 11px rgba(49, 55, 24, 0.75);
+        -moz-box-shadow: 8px 10px 17px 11px rgba(49, 55, 24, 0.75);
+}
+
+.shadowDark {
+    box-shadow: 8px 10px 17px 11px rgba(211, 216, 190, 0.75);
+        -webkit-box-shadow: 8px 10px 17px 11px rgba(211, 216, 190, 0.75);
+        -moz-box-shadow: 8px 10px 17px 11px rgba(211, 216, 190, 0.75);
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.recommended {
+    color: #FFC107;
+    box-shadow: 0px 2px #0ff;
+}
+
+.notRecommended {
+    opacity: 0;
+}
+
+@keyframes recommended {
+    25% {
+        border-color: rgb(216, 209, 111);
+    }
+
+    50% {
+        border-color: rgb(102, 175, 12);
+    }
+    
+    75% {
+        border-color: lightblue;
+    }
+
+    100% {
+        border-color: red;
+    }
+}

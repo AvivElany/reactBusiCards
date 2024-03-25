@@ -1,0 +1,84 @@
+.para {
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 15px;
+}
+
+.para h2 {
+    font-size: 2.4rem;
+    font-family: "Madimi One", sans-serif;
+    color: #FFC107;
+    margin-bottom: 20px;
+}
+
+.para3  h3 {
+    margin: 0 auto;
+    width: 510px;
+    font-size: 3rem;
+    animation: panch 5s infinite;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.para3 h3:hover {
+    border: 2px solid #48b925;
+    border-radius: 50px;
+    
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.excuses {
+    margin: 20px;
+    padding: 20px;
+}
+
+.excuses span {
+    text-decoration: line-through;
+}
+
+.hide {
+    display: none;
+}
+
+.technology:hover {
+    .hide {
+        display: block;
+    }
+}
+
+@keyframes panch {
+    25% {
+        background-image: url(/images/lake.jpg);
+        background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+    }
+
+    50% {
+        background-image: url(/images/concrete.jpg);
+        background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+    }
+    
+    75% {
+        background-image: url(/images/space.jpg);
+        background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+    }
+
+    100% {
+        background-image: url(/images/wood.jpg);
+        background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+    }
+}

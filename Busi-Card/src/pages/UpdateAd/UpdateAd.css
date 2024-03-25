@@ -1,0 +1,57 @@
+.UpdateAd.SignUp p {
+    font-weight: bold;
+}
+
+.UpdateAd button {
+    margin: 10px;
+    padding: 6px;
+    margin: auto;
+    background-color: rgb(13, 114, 230);
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+    &:hover {
+        box-shadow: rgb(153, 153, 153) 0px 0px 3px 3px;
+    }
+}
+
+
+
+@media (min-width: 901px) {
+
+    .UpdateAd .formContainer {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid gray;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .UpdateAd label {
+        width: 150px;
+        text-align: left;
+    }
+
+
+    .UpdateAd input {
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .UpdateAd label {
+        margin: 5px;
+    }
+
+    .UpdateAd input {
+        margin: 5px;
+    }
+
+    .UpdateAd button {
+        margin: 10px;
+    }
+}
