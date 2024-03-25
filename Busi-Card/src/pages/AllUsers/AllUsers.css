@@ -5,9 +5,12 @@
     align-items: center;
 }
 
+thead {
+    background-color: darkkhaki;
+}
+
 .AllUsers table {
-    border: 2px solid lightgrey;
-    width: 80vw;
+    border: 2px solid darkred;
 }
 
 .AllUsers th {
@@ -19,23 +22,13 @@
 }
 
 .AllUsers tr:nth-child(even) {
-    background-color: lightslategray;
+    background-color: rgb(82, 94, 106);
 }
 
 .AllUsers tr:nth-child(odd) {
-    background-color: #f0f;
+    background-color: #999;
 }
 
 .AllUsers tr:hover {
-    background-color: #28a32e;
+    background-color:darkgoldenrod;
 }
-
-.AllUsers .icon, .AllUsers .profilImage {
-    width: 50px;
-    border-radius: 50%;
-} 
-
-.tableHeader {
-    font-size: 1rem;
-}
-
